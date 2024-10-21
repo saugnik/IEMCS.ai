@@ -1,0 +1,110 @@
+/* Page Content Container */
+body, html {
+  background: #100434;
+}
+
+.automation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  color: rgb(81, 79, 79);
+  min-height: 100vh;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+/* Content Section */
+.content {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: justify;
+  max-width: 800px;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
+/* Image Section */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  /* Enhanced shadow on hover */
+}
+
+/* Button Styles */
+button {
+  background-color: #4CAF50;
+  /* Green button color */
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #388E3C;
+  /* Darker green */
+  transform: translateY(-3px);
+  /* Hover jump effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+
+  .image-container {
+    max-width: 100%;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}

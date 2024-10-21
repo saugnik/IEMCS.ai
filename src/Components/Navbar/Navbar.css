@@ -1,6 +1,6 @@
-nav{
+/* Base Navbar Styles */
+nav {
     width: 100%;
-    /* background: #333; */
     color: #fff;
     padding: 4px 0;
     position: fixed;
@@ -11,57 +11,114 @@ nav{
     justify-content: space-between;
     z-index: 10;
 }
-.logo{
+
+.logo {
     width: 140px;
 }
-nav ul li{
-    display: inline-block;
+
+nav ul {
+    display: flex;
     list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
     margin: 5px 20px;
     font-size: 16px;
 }
-.dark-nav{
-    background: #212EA0;
-    transition: 0.5s;
-}
-.menu-icon{
-    display: none;
-}
-/* ----- media query ----------- */
 
-@media (max-width: 1000px){
-    .logo{
+.menu-icon {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+.dark-nav {
+    background: #212EA0;
+    transition: background-color 0.5s ease;
+}
+
+/* Dropdown Box Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 80%;
+    left: -175%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    z-index: 10;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(10px); /* Slide down effect */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation */
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0); /* Moves into view smoothly */
+}
+
+/* Dropdown Links */
+.dropdown-content button {
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dropdown-content button:hover {
+    background-color: #f0f0f0; /* Hover effect */
+    color: #000;
+    cursor: pointer;
+}
+
+/* Media Query Adjustments */
+@media (max-width: 1000px) {
+    .logo {
         width: 140px;
     }
-    nav ul li{
+
+    nav ul li {
         margin: 10px 15px;
     }
 }
-@media (max-width: 840px){
-    nav{
+
+@media (max-width: 840px) {
+    nav {
         padding: 15px 0;
     }
-    nav ul{
+
+    nav ul {
         position: fixed;
         top: 0;
-        right: 0px;
+        right: 0;
         bottom: 0;
         background: #212EA0;
         z-index: -1;
         width: 200px;
         padding-top: 70px;
-        transition: 0.5s;
+        transition: 0.5s ease;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 25px 40px;
     }
-    .menu-icon{
+
+    .menu-icon {
         display: block;
-        width: 30px;
-        cursor: pointer;
     }
-    .hide-mobile-menu{
+
+    .hide-mobile-menu {
         right: -200px;
     }
 }
