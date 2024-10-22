@@ -1,6 +1,6 @@
 nav {
     width: 100%;
-    /* background: #333; */
+    background: #0d1a4c;
     color: #fff;
     padding: 4px 0;
     position: fixed;
@@ -24,7 +24,7 @@ nav ul li {
 }
 
 .dark-nav {
-    background: #212EA0;
+    background: ##0d1a4c;
     transition: 0.5s;
 }
 
