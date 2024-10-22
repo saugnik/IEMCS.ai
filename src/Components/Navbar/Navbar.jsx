@@ -24,7 +24,7 @@ const Navbar = () => {
     if (location.pathname.startsWith('/blog')) {
       setBgColor('#212EA0'); // Change state to the new color
     } else {
-      setBgColor(''); // Reset to default if not on blog page
+      setBgColor("")
     }
   }, [location]);
 
@@ -41,6 +41,8 @@ const Navbar = () => {
     navigate(`/blog/${category}`);
     setBlogDropdown(false); // Close dropdown after click
   };
+
+  console.log(`bg-[${bgColor}]`);
 
   return (
     <nav className={`my-container ${sticky ? 'dark-nav' : `bg-[${bgColor}]`}`}>
@@ -68,6 +70,7 @@ const Navbar = () => {
       <img src={menu_icon} alt="menu icon" className='menu-icon' onClick={toggleMenu} />
     </nav>
   )
+
 }
 
 export default Navbar;
