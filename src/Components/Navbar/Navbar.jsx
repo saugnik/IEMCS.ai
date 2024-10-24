@@ -58,14 +58,16 @@ const Navbar = () => {
           <span>Blog</span>
           {blogDropdown && (
             <div className="dropdown-content">
-              <button onClick={() => handleCategoryClick('automation')}>Automation</button>
+              {/* <button onClick={() => handleCategoryClick('automation')}>Automation</button>
               <button onClick={() => handleCategoryClick('iot')}>IoT</button>
-              <button onClick={() => handleCategoryClick('robotics')}>Robotics</button>
+              <button onClick={() => handleCategoryClick('robotics')}>Robotics</button> */}
+              <button onClick={() => handleCategoryClick('itservices1')}>DevOps</button>  
+              <button onClick={() => handleCategoryClick('itservices2')}>Gen AI</button>              
             </div>
           )}
         </li>
 
-        <li><ScrollLink to='contact' smooth={true} offset={-260} duration={500} className='btn'>Contact us</ScrollLink></li>
+        <li><ScrollLink to='contact' smooth={true} offset={-260} duration={500} >Contact us</ScrollLink></li>
       </ul>
       <img src={menu_icon} alt="menu icon" className='menu-icon' onClick={toggleMenu} />
     </nav>

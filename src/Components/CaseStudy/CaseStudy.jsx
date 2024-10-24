@@ -7,6 +7,10 @@ import white_arrow from '../../assets/white-arrow.png'
 const CaseStudy = ({ setPlayState }) => {
     return (
         <div>
+        <div>
+        <p style={{ fontWeight: 'normal', textAlign: 'center', margin: '50px' }} >IEMCS has entered into multiple MoUs (Memorandums of Understanding) with industry-leading companies to collaboratively develop innovative solutions, leveraging their combined expertise and resources to drive cutting-edge advancements across various sectors.
+        </p>
+        </div>
         <div className='CaseStudy'>
             <div className="CaseStudy-left">
  

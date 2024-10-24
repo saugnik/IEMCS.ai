@@ -3,6 +3,23 @@
     width: 100%;
     text-align: Center;
 }
+
+.campus h2{
+    font-size: 24px;
+    text-align: Center;
+    color: #000F38;
+
+ }
+
+ .campus p{
+    color: #000F38;
+    margin-bottom: 15px;
+    text-align: Center;
+    margin: 15px 0;
+    width: 100%;
+    /*argin-left: 15px;*/
+ }
+
 .gallery{
     display: flex;
     align-items: center;
@@ -15,6 +32,12 @@
     align-items: center;
     /*border-radius: 10px;*/
 }
+
+.CaseStudy p{
+    color: #000F38;
+    margin-bottom: 10px;
+}
+
 /* ------- media query ------------- */
 @media (max-width: 800px){
     .gallery{

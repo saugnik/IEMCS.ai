@@ -14,6 +14,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AutomationPage from './Components/Blog/Automation/Automation'
 import IotPage from './Components/Blog/IoT/IoT'
 import RoboticsPage from './Components/Blog/Robotics/Robotics'
+import BlogPage1 from './Components/Blog/ITServices/BlogPage1'
+import BlogPage2 from './Components/Blog/ITServices/BlogPage2'
 
 const App = () => {
 
@@ -47,13 +49,16 @@ const App = () => {
             <Testimonials />
             <Title subTitle='Contact Us' title='Get in Touch' />
             <Contact />
-            <Footer />
+
           </div>
+          <Footer />
           <VideoPlayer playState={playState} setPlayState={setPlayState} />
         </div>} />
         <Route path="/blog/automation" element={<AutomationPage />} />
         <Route path="/blog/iot" element={<IotPage />} />
         <Route path="/blog/robotics" element={<RoboticsPage />} />
+        <Route path="/blog/itServices1" element={<BlogPage1 />} />
+        <Route path="/blog/itServices2" element={<BlogPage2 />} />
       </Routes>
     </Router>
   )
